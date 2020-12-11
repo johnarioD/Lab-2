@@ -48,7 +48,7 @@ For the next step of the exercize we were requested to make an attempt at findin
 ![Alt](Graphs/MCF_Inst_miss.png)  
 ![Alt](Graphs/MCF_L2_miss.png)  
 
-_(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8
+_(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8)_
 
 It is apparent that all benchmarks benefit from a larger cache size as that reduces the amount of accesses to higher level memory. Depending on the benchmark the balance between L1 data cache size and L1 instruction cache size may differ however they ultimately add up to the maximum possible. The associativities and cache line sizes are a bit more varied. It seems that generally higher values are more benefitial but we found that turning points exist where if the variable is increased above that then the benchmark starts running less efficiently again.  
 
