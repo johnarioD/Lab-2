@@ -1,14 +1,18 @@
 # Lab-2
+Computer Architecture Lab 1  
+This report was written by Ioannis Diamantaras (9387) and Dimosthenis Mpounarelis (9431).  
 
 ## Answer 1:
 For the first question we were requested to search through the simulation files and find gem5's default values for our processor's Data Cache size and associativity, Instruction Cache size and associativity, Level 2 Cache size and associativity as well as the cache line size. Since the CPU model used was the same (MinorCPU) across all benchmarks we need only look at one of the files to determine the previous characteristics.
 | DCache Size | ICache Size | DCache Associativity | ICache Associativity | L2 Size | L2 Associativity | Cache Line Size |
 |-------------|-------------|----------------------|----------------------|---------|------------------|-----------------|
-| [65536 B]() | [32768 B]() | [2]() | [2]() | [20870152 B]() | [8]() | [64]() |  
+| [65536 B](Results/Default/specbzip/config.ini#L169) | [32768 B](Results/Default/specbzip/config.ini#L833) | [2](Results/Default/specbzip/config.ini#L152) | [2](Results/Default/specbzip/config.ini#L816) | [20870152 B](Results/Default/specbzip/config.ini#L1061) | [8](Results/Default/specbzip/config.ini#L1078) | [64](Results/Default/specbzip/config.ini#L199) |  
 
 We also took note of the execution times, CPI and the various cache miss rates for our benchmarks and compiled the following graphs to help us compare:  
 
-### _Insert Graphs_  
+![Alt](Graphs/Simulation_Time.png)  
+![Alt](Graphs/CPI.png)  
+![Alt](Graphs/Cache_Misses.png)  
 
 It is apparent that the chess simulation benchmark (sjeng) has the highest overall CPI and execution time. That is a result of the massive amount of data cache and level 2 misses which probably occur due to the binary tree traversals that happen within the benchmark's code (very low locality). It is followed by libm which has less than half the CPI of sjeng. This model's drawback and the reason for its high CPI is the large amount of instruction cache misses which are most probably the result of the large amount of different and unrelated mathematical operations that need be executed on the data for the program. Benchmarks mcf and bzip are equally quick to run and have a significantly smaller CPI. As a pair they are similar to the pair of sjeng and libm in that bzip's higher than 1 CPI is a result of data cache misses and mcf's CPI derives mainly from instruction cache misses. Something that holds for every benchmark and was also expected before any expirimentation is that its CPI is also greatly dependent on the amount of level 2 misses. The reason for that is that after a level 2 cache miss info has to come directly from the memory whose latency is significantly larger than that of our caches.
   
@@ -35,7 +39,16 @@ The other two benchmarks do not scale well; it has to do with the fact that thes
 ## Answer 2:
 For the next step of the exercize we were requested to make an attempt at finding optimal architecture for each benchmark by minimizing the CPI and chache misses. Of course, running haphazard experiments for random values for each and every one of our given variables would take too much time even with the limits we were given. The algorithm we came up to reduce time was the following: We would first check each variable individually to see how large of an effect it has on our execution. Afterwards we ordered each vaible for each program by order of importance and run experiments optimizing one variable each time. That should have been sufficient for us to find the optimum had our variables been completely independent. We are aware however that such a thing is untrue, we consider groups our variables to be lightly dependent, to be more specific each cache should be dependent on the corresponding associativity, also, caches of the same level should also be dependent on eachother's size and cache line size should be correlated with all other variables. Keeping that in mind we executed a few extra experiments to see if that light dependence was enough to through our results off at any point and made any needed corrections.  
 
-**_Graphs_**
+![Alt](Graphs/Bzip_CPI.png)  
+![Alt](Graphs/Bzip_Data_miss.png)  
+![Alt](Graphs/Bzip_Inst_miss.png)  
+![Alt](Graphs/Bzip_L2_miss.png)  
+![Alt](Graphs/MCF_CPI.png)  
+![Alt](Graphs/MCF_Data_miss.png)  
+![Alt](Graphs/MCF_Inst_miss.png)  
+![Alt](Graphs/MCF_L2_miss.png)  
+
+_(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8)_
 
 It is apparent that all benchmarks benefit from a larger cache size as that reduces the amount of accesses to higher level memory. Depending on the benchmark the balance between L1 data cache size and L1 instruction cache size may differ however they ultimately add up to the maximum possible. The associativities and cache line sizes are a bit more varied. It seems that generally higher values are more benefitial but we found that turning points exist where if the variable is increased above that then the benchmark starts running less efficiently again.  
 
