@@ -10,8 +10,8 @@ For the first question we were requested to search through the simulation files 
 
 We also took note of the execution times, CPI and the various cache miss rates for our benchmarks and compiled the following graphs to help us compare:  
 
-![](Graphs/Simulation_Time.png)  
-![](Graphs/CPI.png)
+![](Graphs/Simulation_Time.png)
+![](Graphs/CPI.png)  
 ![](Graphs/Cache_Misses.png)  
 
 It is apparent that the chess simulation benchmark (sjeng) has the highest overall CPI and execution time. That is a result of the massive amount of data cache and level 2 misses which probably occur due to the binary tree traversals that happen within the benchmark's code (very low locality). It is followed by libm which has less than half the CPI of sjeng. This model's drawback and the reason for its high CPI is the large amount of instruction cache misses which are most probably the result of the large amount of different and unrelated mathematical operations that need be executed on the data for the program. Benchmarks mcf and bzip are equally quick to run and have a significantly smaller CPI. As a pair they are similar to the pair of sjeng and libm in that bzip's higher than 1 CPI is a result of data cache misses and mcf's CPI derives mainly from instruction cache misses. Something that holds for every benchmark and was also expected before any expirimentation is that its CPI is also greatly dependent on the amount of level 2 misses. The reason for that is that after a level 2 cache miss info has to come directly from the memory whose latency is significantly larger than that of our caches.
@@ -39,21 +39,21 @@ The other two benchmarks do not scale well; it has to do with the fact that thes
 ## Answer 2:
 For the next step of the exercize we were requested to make an attempt at finding optimal architecture for each benchmark by minimizing the CPI and chache misses. Of course, running haphazard experiments for random values for each and every one of our given variables would take too much time even with the limits we were given. The algorithm we came up to reduce time was the following: We would first check each variable individually to see how large of an effect it has on our execution. Afterwards we ordered each vaible for each program by order of importance and run experiments optimizing one variable each time. That should have been sufficient for us to find the optimum had our variables been completely independent. We are aware however that such a thing is untrue, we consider groups our variables to be lightly dependent, to be more specific each cache should be dependent on the corresponding associativity, also, caches of the same level should also be dependent on eachother's size and cache line size should be correlated with all other variables. Keeping that in mind we executed a few extra experiments to see if that light dependence was enough to through our results off at any point and made any needed corrections.  
 
-![](Graphs/Bzip_CPI.png)  
+![](Graphs/Bzip_CPI.png)
 ![](Graphs/Bzip_Data_miss.png)  
-![](Graphs/Bzip_Inst_miss.png)  
+![](Graphs/Bzip_Inst_miss.png)
 ![](Graphs/Bzip_L2_miss.png)  
-![](Graphs/MCF_CPI.png)  
+![](Graphs/MCF_CPI.png)
 ![](Graphs/MCF_Data_miss.png)  
-![](Graphs/MCF_Inst_miss.png)  
+![](Graphs/MCF_Inst_miss.png)
 ![](Graphs/MCF_L2_miss.png)  
-![](Graphs/LIBM_CPI.png)  
+![](Graphs/LIBM_CPI.png)
 ![](Graphs/LIBM_Data_miss.png)  
-![](Graphs/LIBM_Inst_miss.png)  
+![](Graphs/LIBM_Inst_miss.png)
 ![](Graphs/LIBM_L2_miss.png)  
-![](Graphs/sjeng_CPI.png)  
+![](Graphs/sjeng_CPI.png)
 ![](Graphs/sjeng_Data_miss.png)  
-![](Graphs/sjeng_Inst_miss.png)  
+![](Graphs/sjeng_Inst_miss.png)
 ![](Graphs/sjeng_L2_miss.png)  
 
 _(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8)_
