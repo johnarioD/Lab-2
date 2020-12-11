@@ -1,12 +1,12 @@
 # Lab-2
-Computer Architecture Lab 1  
+Computer Architecture Lab 2  
 This report was written by Ioannis Diamantaras (9387) and Dimosthenis Mpounarelis (9431).  
 
 ## Answer 1:
 For the first question we were requested to search through the simulation files and find gem5's default values for our processor's Data Cache size and associativity, Instruction Cache size and associativity, Level 2 Cache size and associativity as well as the cache line size. Since the CPU model used was the same (MinorCPU) across all benchmarks we need only look at one of the files to determine the previous characteristics.
 | DCache Size | ICache Size | DCache Associativity | ICache Associativity | L2 Size | L2 Associativity | Cache Line Size |
 |-------------|-------------|----------------------|----------------------|---------|------------------|-----------------|
-| [65536 B](Results/Default/specbzip/config.ini#L169) | [32768 B](Results/Default/specbzip/config.ini#L833) | [2](Results/Default/specbzip/config.ini#L152) | [2](Results/Default/specbzip/config.ini#L816) | [20870152 B](Results/Default/specbzip/config.ini#L1061) | [8](Results/Default/specbzip/config.ini#L1078) | [64](Results/Default/specbzip/config.ini#L199) |  
+| [65536 B](Results/Default/specbzip/config.ini#L169) | [32768 B](Results/Default/specbzip/config.ini#L833) | [2](Results/Default/specbzip/config.ini#L152) | [2](Results/Default/specbzip/config.ini#L816) | [2097152 B](Results/Default/specbzip/config.ini#L1078) | [8](Results/Default/specbzip/config.ini#L1061) | [64](Results/Default/specbzip/config.ini#L199) |  
 
 We also took note of the execution times, CPI and the various cache miss rates for our benchmarks and compiled the following graphs to help us compare:  
 
@@ -89,10 +89,23 @@ L2 size 4MB, L1 data size 128kB, L1 instruction size 128kB, L2 associativity 1, 
 ## Answer 3:
 For the final question in the exercize we needed to look into bibliography and construct our own cost function for our processor. We decided on the following:  
     
-We name our variables L1 icache associativity = **_ai_**, L1 dcache associativity = **_ad_**, L2 cache associativity = **_b_**, L1 icache size = **_x_**, L1 dcache size = **_y_**, L2 cache size  = **_z_** and memory (DRAM) size = **_m_**.
-We also define three constants: **_f_** = CPU clock frequency **_l1_** = _f*476.8371582*10^-6_, **_mem_** = _5.722045898*10^-6_, **_l2_** = _(1/3.5)*f*(l1-mem) + mem_, **_c_** = a standard amoun that represents the cost of our CPU's ALUs and other function units. 
+We name our variables  
+L1 icache associativity = **_ai_**, L1 dcache associativity = **_ad_**, L2 cache associativity = **_b_**, L1 icache size = **_x_**, L1 dcache size = **_y_**, L2 cache size  = **_z_** and memory (DRAM) size = **_m_**.  
+We also define three constants: **_f_** = CPU clock frequency **_l1_** = _f*476.8371582*10^-6_, **_mem_** = _5.722045898*10^-6_, **_l2_** = _(1/3.5)*f*(l1-mem) + mem_, **_c_** = a standard amoun that represents the cost of our CPU's ALUs and other function units.  
 
-With all these variables and constants define we have:
+With all these variables and constants define we have:  
+  
 **_Cost_** = _l1*\[x*log(ai) + y*log(ad)] + l2*z*log(b) + mem*m + c_
-
+  
 Our decisions when designing the previous function went as follows: Each component of our CPU is seperate to one another and should thus cost the same regardless of any changes to the other components. CPU functional units should have a standard price as we cannot change them in any way in our experiments. Memories should cost more the larger they are and different levels of memory should have a different cost modifier depending on how fast or slow they are. A cache's associativity increases the design complecity and thus should also increase its cost.
+
+With our cost function, considering a 1GHz clock, our "optimum" architectures would cost:  
+Cost(bzip) = 9586.824785  
+Cost(mcf) = 8935.759828
+Cost(sjeng) = 6857.564957
+Cost(libm) = 6269
+
+
+While the default architecture (found at the begining of this report) would cost:  
+Cost(default) = 7073.770119  
+
