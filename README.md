@@ -14,19 +14,20 @@ It is apparent that the chess simulation benchmark (sjeng) has the highest overa
   
 Finally, we tested for the effects of the system and CPU clocks on the benchmarks. We found out that all CPU cores have the same frequency, which is equal to the value of cpu_cluster.clk_domain.clock. Other than the frequency of the processing units, cpu_cluster.clk_domain.clock also defines the frequency of our L1 and 2 caches. The system.clk_domain.clock defines the frequency of all other components of the simulated machine as well as the communication speed between them. This variable seems to be constant and equal to 1GHz.  
 We also tested for the scalability of the benchmarks according to the CPU clock frequency and the results differ between the various benchmarks.    
- |**1GHz**|**2GHz**|**scaling**
-:-----:|:-----:|:-----:|:-----:
-Bzip|0.160361|0.083656|0.5217
-MCF|0.123264|0.062553|0.5075
-Sjeng|0.70545|0.51374|0.7282
-Libm|6.4E-05|4.5E-05|0.7031
 
- |**1GHz**|**3GHz**|**scaling**
-:-----:|:-----:|:-----:|:-----:
-Bzip|0.160361|0.058175|0.3628
-MCF|0.123264|0.043017|0.349
-Sjeng|0.70545|0.449832|0.63765
-Libm|6.4E-05|3.9E-05|0.6094
+|       | 1GHz     | 2GHz     | scaling |
+|:-----:|----------|----------|---------|
+| BZip  | 0.160361 | 0.083656 | 0.5217  |
+| MCF   | 0.123264 | 0.062553 | 0.5075  |
+| sjeng | 0.51374  | 0.51374  | 0.7282  |
+| libm  | 0.000064 | 0.000045 | 0.7031  |
+
+|       | 1GHz     | 3GHz     | scaling |
+|:-----:|----------|----------|---------|
+| BZip  | 0.160361 | 0.058175 | 0.3628  |
+| MCF   | 0.123264 | 0.043017 | 0.349   |
+| sjeng | 0.51374  | 0.449832 | 0.63765 |
+| libm  | 0.000064 | 0.000039 | 0.6094  |
   
 ## Answer 2:
 For the next step of the exercize we were requested to make an attempt at finding optimal architecture for each benchmark by minimizing the CPI and chache misses. Of course, running haphazard experiments for random values for each and every one of our given variables would take too much time even with the limits we were given. The algorithm we came up to reduce time was the following: We would first check each variable individually to see how large of an effect it has on our execution. Afterwards we ordered each vaible for each program by order of importance and run experiments optimizing one variable each time. That should have been sufficient for us to find the optimum had our variables been completely independent. We are aware however that such a thing is untrue, we consider groups our variables to be lightly dependent, to be more specific each cache should be dependent on the corresponding associativity, also, caches of the same level should also be dependent on eachother's size and cache line size should be correlated with all other variables. Keeping that in mind we executed a few extra experiments to see if that light dependence was enough to through our results off at any point and made any needed corrections.  
