@@ -6,7 +6,7 @@ This report was written by Ioannis Diamantaras (9387) and Dimosthenis Mpounareli
 For the first question we were requested to search through the simulation files and find gem5's default values for our processor's Data Cache size and associativity, Instruction Cache size and associativity, Level 2 Cache size and associativity as well as the cache line size. Since the CPU model used was the same (MinorCPU) across all benchmarks we need only look at one of the files to determine the previous characteristics.
 | DCache Size | ICache Size | DCache Associativity | ICache Associativity | L2 Size | L2 Associativity | Cache Line Size |
 |-------------|-------------|----------------------|----------------------|---------|------------------|-----------------|
-| [65536 B](Results/Default/config.ini#L169) | [32768 B](Results/Default/config.ini#L833) | [2](Results/Default/config.ini#L152) | [2](Results/Default/config.ini#L816) | [20870152 B](Results/Default/config.ini#L1061) | [8](Results/Default/config.ini#L1078) | [64](Results/Default/config.ini#L199) |  
+| [65536 B](Results/Default/specbzip/config.ini#L169) | [32768 B](Results/Default/specbzip/config.ini#L833) | [2](Results/Default/specbzip/config.ini#L152) | [2](Results/Default/specbzip/config.ini#L816) | [20870152 B](Results/Default/specbzip/config.ini#L1061) | [8](Results/Default/specbzip/config.ini#L1078) | [64](Results/Default/specbzip/config.ini#L199) |  
 
 We also took note of the execution times, CPI and the various cache miss rates for our benchmarks and compiled the following graphs to help us compare:  
 
@@ -48,6 +48,7 @@ For the next step of the exercize we were requested to make an attempt at findin
 ![Alt](Graphs/MCF_Inst_miss.png)  
 ![Alt](Graphs/MCF_L2_miss.png)  
 
+_(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8
 
 It is apparent that all benchmarks benefit from a larger cache size as that reduces the amount of accesses to higher level memory. Depending on the benchmark the balance between L1 data cache size and L1 instruction cache size may differ however they ultimately add up to the maximum possible. The associativities and cache line sizes are a bit more varied. It seems that generally higher values are more benefitial but we found that turning points exist where if the variable is increased above that then the benchmark starts running less efficiently again.  
 
