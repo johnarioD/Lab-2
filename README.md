@@ -20,7 +20,19 @@ For the next step of the exercize we were requested to make an attempt at findin
 
 **_Graphs_**
 
-It is apparent that all benchmarks benefit from a larger cache size as that reduces the amount of accesses to higher level memory. Depending on the benchmark the balance between L1 data cache size and L1 instruction cache size may differ however they unltimately add up to the maximum possible. The associativities and cache line sizes are a bit more varied. It seems that generally higher values are more benefitial but we found that turning points exist where if the variable is increased above that then the benchmark starts running less efficiently again.  
+It is apparent that all benchmarks benefit from a larger cache size as that reduces the amount of accesses to higher level memory. Depending on the benchmark the balance between L1 data cache size and L1 instruction cache size may differ however they ultimately add up to the maximum possible. The associativities and cache line sizes are a bit more varied. It seems that generally higher values are more benefitial but we found that turning points exist where if the variable is increased above that then the benchmark starts running less efficiently again.  
+
+As mentioned previously we had ordered our variables by order of importance, the following table shows our ordering of the variables a bit more clearly
+
+| bzip | mcf | sjeng | libm |
+|------|-----|-------|------|
+| L2 size | L2 size | Cache Line size | Cache Line size |
+| L1 data size | L2 assoc | L2 size | L2 size |
+| L1 data assoc | L1 data assoc | L1 data size | L1 data size |
+| L2 assoc | L1 data size | L1 data assoc | L1 data assoc |
+| L1 inst. size | L1 inst. size | L2 assoc | L2 assoc |
+| L1 inst. assoc | L1 inst.assoc | L1 inst. size | L1 inst. size |
+| Cache Line size | Cache Line size | L2 inst. assoc | L1 inst. assoc |
 
 More specifically:
 ## Answer 3:
