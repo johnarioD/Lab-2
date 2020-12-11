@@ -47,6 +47,14 @@ For the next step of the exercize we were requested to make an attempt at findin
 ![Alt](Graphs/MCF_Data_miss.png)  
 ![Alt](Graphs/MCF_Inst_miss.png)  
 ![Alt](Graphs/MCF_L2_miss.png)  
+![Alt](Graphs/LIBM_CPI.png)  
+![Alt](Graphs/LIBM_Data_miss.png)  
+![Alt](Graphs/LIBM_Inst_miss.png)  
+![Alt](Graphs/LIBM_L2_miss.png)  
+![Alt](Graphs/sjeng_CPI.png)  
+![Alt](Graphs/sjeng_Data_miss.png)  
+![Alt](Graphs/sjeng_Inst_miss.png)  
+![Alt](Graphs/sjeng_L2_miss.png)  
 
 _(Note: In order to compress the info on the previous graphs we made the X axis represent different things for different variables, specificaly, associativities are 2<sup>i-1</sup>, L1 sizes are 2<sup>i</sup>*8kB, L2 sizes are 2<sup>i</sup>*128kB and cache line sizes are 2<sup>i</sup>*8)_
 
