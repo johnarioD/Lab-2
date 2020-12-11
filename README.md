@@ -101,9 +101,9 @@ Our decisions when designing the previous function went as follows: Each compone
 
 With our cost function, considering a 1GHz clock, our "optimum" architectures would cost:  
 Cost(bzip) = 9586.824785  
-Cost(mcf) = 8935.759828
-Cost(sjeng) = 6857.564957
-Cost(libm) = 6269
+Cost(mcf) = 8935.759828  
+Cost(sjeng) = 6857.564957  
+Cost(libm) = 6269  
 
 
 While the default architecture (found at the begining of this report) would cost:  
