@@ -41,15 +41,15 @@ It is apparent that all benchmarks benefit from a larger cache size as that redu
 
 As mentioned previously we had ordered our variables by order of importance, the following table shows our ordering of the variables a bit more clearly
 
-| bzip            | mcf             | sjeng           | libm            |
-|-----------------|-----------------|-----------------|-----------------|
-| L2 size         | L2 size         | Cache Line size | Cache Line size |
-| L1 data size    | L2 assoc        | L2 size         | L2 size         |
-| L1 data assoc   | L1 data assoc   | L1 data size    | L1 data size    |
-| L2 assoc        | L1 data size    | L1 data assoc   | L1 data assoc   |
-| L1 inst. size   | L1 inst. size   | L2 assoc        | L2 assoc        |
-| L1 inst. assoc  | L1 inst.assoc   | L1 inst. size   | L1 inst. size   |
-| Cache Line size | Cache Line size | L2 inst. assoc  | L1 inst. assoc  |
+| Priority | bzip            | mcf             | sjeng           | libm            |
+|----------|-----------------|-----------------|-----------------|-----------------|
+| 1st      | L2 size         | L2 size         | Cache Line size | Cache Line size |
+| 2nd      | L1 data size    | L2 assoc        | L2 size         | L2 size         |
+| 3rd      | L1 data assoc   | L1 data assoc   | L1 data size    | L1 data size    |
+| 4th      | L2 assoc        | L1 data size    | L1 data assoc   | L1 data assoc   |
+| 5th      | L1 inst. size   | L1 inst. size   | L2 assoc        | L2 assoc        |
+| 6th      | L1 inst. assoc  | L1 inst.assoc   | L1 inst. size   | L1 inst. size   |
+| 7th      | Cache Line size | Cache Line size | L2 inst. assoc  | L1 inst. assoc  |
 
 More specifically:
 ## Answer 3:
