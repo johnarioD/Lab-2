@@ -72,7 +72,13 @@ As mentioned previously we had ordered our variables by order of importance, the
 | 6th      | L1 inst. assoc  | L1 inst.assoc   | L1 inst. size   | L1 inst. size   |
 | 7th      | Cache Line size | Cache Line size | L2 inst. assoc  | L1 inst. assoc  |
 
-More specifically:
+After our experiments concluded we reached the following "optimal" values for CPI:
+bzip - 1.583797 with L2 size 4MB, L1 data size 128kB, L1 instruction size 128kB, L2 associativity 32, L1 data associativity 32, L1 instruction associativity 8, cache line size 256  
+mcf - 1.109019 with L2 size 4MB, L1 data size 64kB, L1 instruction size 128kB, L2 associativity 16, L1 data associativity 32, L1 instruction associativity 16, cache line size 128  
+sjeng - 3.714661 with L2 size 4MB, L1 data size 128kB, L1 instruction size 128kB, L2 associativity 2, L1 data associativity 2, L1 instruction associativity 2, cache line size 256  
+libm - 1.653658 with L2 size 4MB, L1 data size 128kB, L1 instruction size 128kB, L2 associativity 1, L1 data associativity 2, L1 instruction associativity 2, cache line size 256  
+
+
 ## Answer 3:
 For the final question in the exercize we needed to look into bibliography and construct our own cost function for our processor. We decided on the following:  
     
