@@ -1,0 +1,875 @@
+./sjengL1=16KB_L2=2048KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.057857 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=1024KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055094 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=256KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.196863 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999948 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=2048KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055147 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=4096KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052671 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=2048KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054250 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=2048KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.057857 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=512KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063420 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991918 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=1024KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055994 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=2048KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054490 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=512KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056391 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998729 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=4096KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.053341 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=256KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.196863 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999948 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=4096KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.060339 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=4096KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056074 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=256KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056611 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998730 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=512KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055506 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=512KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063420 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991918 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=1024KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055994 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=4096KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.060339 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=4096KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052384 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=512KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063420 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991918 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=256KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056611 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998730 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=512KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059143 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=256KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056611 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998730 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=1024KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063002 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=1024KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055094 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=1024KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063002 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=2048KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054250 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=2048KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.062182 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=256KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056004 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999549 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=256KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063654 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991922 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=2048KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054250 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=2048KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054490 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=1024KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055373 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=256KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.196863 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999948 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=256KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056611 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998730 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=1024KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.058753 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=4096KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.060339 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=512KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059143 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=1024KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.058753 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=2048KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054490 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=2048KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055147 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=256KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059372 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996298 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=1024KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055373 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=256KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059372 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996298 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=2048KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054250 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=256KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063654 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991922 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=1024KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055994 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=256KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056004 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999549 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=4096KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056074 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=4096KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056074 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=1024KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055994 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=256KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.196863 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999948 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=2048KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.057857 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=4096KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052384 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=512KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055506 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=2048KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054490 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=1024KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055373 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=2048KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.062182 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=4096KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.060339 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=256KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056004 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999549 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=4096KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052384 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=512KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059143 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=512KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055506 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=1024KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.058753 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=1024KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.058753 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=2048KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.057857 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=2048KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055147 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=256KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056004 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999549 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=256KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063654 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991922 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=512KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055785 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=1024KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055094 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=512KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063420 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991918 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=1024KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055373 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=512KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056391 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998729 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=2048KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055147 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=4096KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052671 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=512KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055785 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=256KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059372 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996298 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=1024KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055373 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=512KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055785 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=1024KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063002 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=4096KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052384 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=4096KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052671 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=2048KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054250 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=1024KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055094 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=256KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.196863 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999948 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=2048KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.062182 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=256KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059372 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996298 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=4096KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.053341 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=512KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063420 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991918 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=1024KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055994 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=4096KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052384 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=4096KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052671 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=512KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055785 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=256KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063654 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991922 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=1024KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063002 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=2048KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.062182 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=512KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055506 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=1024KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055094 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=1024KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063002 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=4096KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.060339 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=512KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056391 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998729 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=512KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059143 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=256KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.063654 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991922 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=512KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056391 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998729 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=2048KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.054490 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=4096KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.053341 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=256KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056004 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999549 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=1024KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.058753 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=4096KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056074 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=512KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059143 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996295 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=2048KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.057857 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=512KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056391 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998729 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=4096KB_Line=32/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.052671 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=4096KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056074 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996294 # miss rate for overall accesses
+
+./sjengL1=64KB_L2=512KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055785 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000020 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121858 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999545 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=4096KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.053341 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=256KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.056611 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998730 # miss rate for overall accesses
+
+./sjengL1=128KB_L2=512KB_Line=128/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055506 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000019 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121834 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.999944 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=4096KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.053341 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=16KB_L2=256KB_Line=64/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.059372 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000149 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122008 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.996298 # miss rate for overall accesses
+
+./sjengL1=32KB_L2=2048KB_Line=256/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.055147 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000021 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.121908 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.998728 # miss rate for overall accesses
+
+./sjengL1=8KB_L2=2048KB_Line=16/stats.txt
+------------------------------------------------------
+system.cpu.cpi 7.062182 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000154 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.122277 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.991917 # miss rate for overall accesses
+
