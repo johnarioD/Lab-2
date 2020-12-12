@@ -112,9 +112,9 @@ Cost(default) = 6338.016239
 With these costs in mind, and a few others calculated from other expiriments we decided the the way to optimize the balance between cost and CPI is to minimize the product of the two (meaning CPI * Cost).
 
 We found that:
-Bzip has a better CPI*Cost for 64kB icache size, 128kB dcache size, 2MB l2 size and associativities 1,1,2 respectively, the total Cost*CPI is 11347.79 which is considerably better than what our "optimal CPI" architecture would give us even if its CPI was 1.
+Bzip has a better CPI\*Cost for 64kB icache size, 128kB dcache size, 2MB l2 size and associativities 1,1,2 respectively, the total Cost\*CPI is 11347.79 which is considerably better than what our "optimal CPI" architecture would give us even if its CPI was 1.
 
-MCF has a better CPI*Cost for 64kb icache, 32kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI*Coist is 8043.465 which is almost half of the one for our "optimal" CPI.
+MCF has a better CPI\*Cost for 64kb icache, 32kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Coist is 8043.465 which is almost half of the one for our "optimal" CPI.
 
 For these two models, since their CPI was already very low it seems that the cost of our cost function is much more important to minimize that product thus our results are greatly different than what was mentioned earlier.
 
