@@ -116,11 +116,11 @@ Bzip has a better CPI\*Cost for 64kB icache size, 128kB dcache size, 2MB l2 size
 
 MCF has a better CPI\*Cost for 64kb icache, 32kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Coist is 8043.465 which is almost half of the one for our "optimal" CPI.
 
-Sjeng has a better CPI\*Cost for 8kb icache, 8kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Cost is 23141.6858 ,whie the "optimal" CPI system we have built has a total CPI\*Cost of 28124.181002611.
-
-Libm has a better CPI\*Cost for 128kb icache, 128kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Cost is 10591.6336 ,whie the "optimal" CPI system we have built has a total CPI\*Cost of 11546.7744.
-
 For these two models, since their CPI was already very low it seems that the cost of our cost function is much more important to minimize that product thus our results are greatly different than what was mentioned earlier.
+
+Sjeng has a better CPI\*Cost for 16kb icache, 16kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Cost is 23073.987 ,while the "optimal" CPI system we have built has a total CPI\*Cost of 28124.181002611.
+
+Libm has a better CPI\*Cost for 128kb icache, 128kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI\*Cost is 10591.6336 ,while the "optimal" CPI system we have built has a total CPI\*Cost of 11546.7744.
 
 **_Comments about this project_**:  
 First of all,  We have to point that one of our benchmarks(456.hmmer) would not work at all. According to the instructions given by the professors, we simply did not run this partucular benchmark , so this is why the 456.hmmer and its results do not appear anywhere in this report. Secondly, it should be noted that there are small mistakes in the pdf file of the exercise. For instance, the flag "seed" should follow two dashes (--) and not one(-). Moreover , the "hints" given in the same pdf were not very useful; it was impossible for me to find the phrase "cpu_cluster.clk_domain.clock" anywhere in the config.ini or in config.json or in the stats.txt. What we should search for instead was the "system.cpu_clk_domain". I guess this pdf was written for an older version of gem5, but this is just guessing. These were minor problems though compared to what we have gained. We were inclined to believe that "putting everything in the cpu should make it better, faster". And we were proved wrong. In reality what really happens is that when we change , for instance, a rather small L1 cache to a slightly bigger L1 cache, the CPI gets clearly decreased. However, the more we increase the size of the L1 cache size , the less of the effect we notice in CPI. What happens here is the so-called "diminishing returns". This is not a theory though , read from a textbook or taught in a classroom but ,rather, a live experience we had full control of. 
