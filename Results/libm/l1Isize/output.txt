@@ -1,0 +1,35 @@
+./lbm_icacheSz16kB/stats.txt
+------------------------------------------------------
+system.cpu.cpi 2.650491 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000151 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.062151 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.973111 # miss rate for overall accesses
+
+./lbm_icacheSz128kB/stats.txt
+------------------------------------------------------
+system.cpu.cpi 2.650438 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000089 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.062151 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.973349 # miss rate for overall accesses
+
+./lbm_icacheSz8kB/stats.txt
+------------------------------------------------------
+system.cpu.cpi 2.650491 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000172 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.062151 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.973029 # miss rate for overall accesses
+
+./lbm_icacheSz64kB/stats.txt
+------------------------------------------------------
+system.cpu.cpi 2.650414 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000101 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.062151 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.973305 # miss rate for overall accesses
+
+./lbm_icacheSz32kB/stats.txt
+------------------------------------------------------
+system.cpu.cpi 2.650438 # CPI: cycles per instruction
+system.cpu.icache.overall_miss_rate::total 0.000125 # miss rate for overall accesses
+system.cpu.dcache.overall_miss_rate::total 0.062151 # miss rate for overall accesses
+system.l2.overall_miss_rate::total 0.973211 # miss rate for overall accesses
+
