@@ -37,7 +37,7 @@ It seems that we have the MCF and the BZIP benchmarks have almost perfect scalab
 The other two benchmarks do not scale well; it has to do with the fact that these benchmarks have a high L2 cache miss rate and thus even though the CPU has a higher clock , it has to wait for the needed memory chunks to arrive from the L2. 
   
 ## Answer 2:
-For the next step of the exercize we were requested to make an attempt at finding optimal architecture for each benchmark by minimizing the CPI and chache misses. Of course, running haphazard experiments for random values for each and every one of our given variables would take too much time even with the limits we were given. The algorithm we came up to reduce time was the following: We would first check each variable individually to see how large of an effect it has on our execution. Afterwards we ordered each vaible for each program by order of importance and run experiments optimizing one variable each time. That should have been sufficient for us to find the optimum had our variables been completely independent. We are aware however that such a thing is untrue, we consider groups our variables to be lightly dependent, to be more specific each cache should be dependent on the corresponding associativity, also, caches of the same level should also be dependent on eachother's size and cache line size should be correlated with all other variables. Keeping that in mind we executed a few extra experiments to see if that light dependence was enough to through our results off at any point and made any needed corrections.  
+For the next step of the exercize we were requested to make an attempt at finding optimal architecture for each benchmark by minimizing the CPI and chache misses. Of course, running haphazard experiments for random values for each and every one of our given variables would take too much time even with the limits we were given. The algorithm we came up to reduce time was the following: We would first check each variable individually to see how large of an effect it has on our execution. Afterwards we ordered each vaible for each program by order of importance and run experiments optimizing one variable each time. That should have been sufficient for us to find the optimum had our variables been completely independent. We are aware however that such a thing is untrue, we consider groups our variables to be lightly dependent, to be more specific each cache should be dependent on the corresponding associativity, also, caches of the same level should also be dependent on eachother's size and cache line size should be correlated with all other variables. Keeping that in mind we executed a few extra experiments to see if that light dependence was enough to through our results off at any point and made any needed corrections. _(Note: If two or more experiments showed the same results for different values of our variables we always kept the lowest variable values to ensure that the cost is also kept to a minimum for the next question)_  
 
 ![](Graphs/Bzip_CPI.png)
 ![](Graphs/Bzip_Data_miss.png)  
@@ -95,20 +95,28 @@ We also define three constants: **_f_** = CPU clock frequency **_l1_** = _f*476.
 
 With all these variables and constants define we have:  
   
-**_Cost_** = _l1*\[x*log(ai) + y*log(ad)] + l2*z*log(b) + mem*m + c_
+**_Cost_** = _l1*\[x*ai + y*ad] + l2*z*b + mem*m + c_
   
 Our decisions when designing the previous function went as follows: Each component of our CPU is seperate to one another and should thus cost the same regardless of any changes to the other components. CPU functional units should have a standard price as we cannot change them in any way in our experiments. Memories should cost more the larger they are and different levels of memory should have a different cost modifier depending on how fast or slow they are. A cache's associativity increases the design complecity and thus should also increase its cost.
 
 With our cost function, considering a 1GHz clock, our "optimum" architectures would cost:  
-Cost(bzip) = 9586.824785  
-Cost(mcf) = 8935.759828  
-Cost(sjeng) = 6857.564957  
-Cost(libm) = 6269  
+Cost(bzip) = 14852.51966  
+Cost(mcf) = 17561.03931  
+Cost(sjeng) = 7571.129914  
+Cost(libm) = 6982.564957  
 
 
 While the default architecture (found at the begining of this report) would cost:  
-Cost(default) = 7073.770119  
+Cost(default) = 6338.016239 
 
+With these costs in mind, and a few others calculated from other expiriments we decided the the way to optimize the balance between cost and CPI is to minimize the product of the two (meaning CPI * Cost).
+
+We found that:
+Bzip has a better CPI*Cost for 64kB icache size, 128kB dcache size, 2MB l2 size and associativities 1,1,2 respectively, the total Cost*CPI is 11347.79 which is considerably better than what our "optimal CPI" architecture would give us even if its CPI was 1.
+
+MCF has a better CPI*Cost for 64kb icache, 32kB dcache, 256kB l2 cache and associativities 1,1,1, the total CPI*Coist is 8043.465 which is almost half of the one for our "optimal" CPI.
+
+For these two models, since their CPI was already very low it seems that the cost of our cost function is much more important to minimize that product thus our results are greatly different than what was mentioned earlier.
 
 **_Comments about this project_**:  
 First of all,  We have to point that one of our benchmarks(456.hmmer) would not work at all. According to the instructions given by the professors, we simply did not run this partucular benchmark , so this is why the 456.hmmer and its results do not appear anywhere in this report. Secondly, it should be noted that there are small mistakes in the pdf file of the exercise. For instance, the flag "seed" should follow two dashes (--) and not one(-). Moreover , the "hints" given in the same pdf were not very useful; it was impossible for me to find the phrase "cpu_cluster.clk_domain.clock" anywhere in the config.ini or in config.json or in the stats.txt. What we should search for instead was the "system.cpu_clk_domain". I guess this pdf was written for an older version of gem5, but this is just guessing. These were minor problems though compared to what we have gained. We were inclined to believe that "putting everything in the cpu should make it better, faster". And we were proved wrong. In reality what really happens is that when we change , for instance, a rather small L2 cache to a slightly bigger L2 cache, the CPI gets clearly decreased. However, the more we increase the size of the L2 cache size , the less of the effect we notice in CPI. What happens here is the so-called "diminishing returns". This is not a theory though , read from a textbook or taught in a classroom but ,rather, a live experience we had full control of. 
