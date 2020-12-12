@@ -97,7 +97,7 @@ With all these variables and constants define we have:
   
 **_Cost_** = _l1*\[x*ai + y*ad] + l2*z*b + mem*m + c_
   
-_(Our source for the constants: http://www.toves.org/books/cache/)_  
+_(Our sources for the creation of the cost function: http://www.toves.org/books/cache/, http://igoro.com/archive/gallery-of-processor-cache-effects/)_  
 Our decisions when designing the previous function went as follows: Each component of our CPU is seperate to one another and should thus cost the same regardless of any changes to the other components. CPU functional units should have a standard price as we cannot change them in any way in our experiments. Memories should cost more the larger they are and different levels of memory should have a different cost modifier depending on how fast or slow they are. A cache's associativity increases the design complecity and thus should also increase its cost.
 
 With our cost function, considering a 1GHz clock, our "optimum" architectures would cost:  
