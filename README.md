@@ -97,6 +97,7 @@ With all these variables and constants define we have:
   
 **_Cost_** = _l1*\[x*ai + y*ad] + l2*z*b + mem*m + c_
   
+_(Our source for the constants: http://www.toves.org/books/cache/)_  
 Our decisions when designing the previous function went as follows: Each component of our CPU is seperate to one another and should thus cost the same regardless of any changes to the other components. CPU functional units should have a standard price as we cannot change them in any way in our experiments. Memories should cost more the larger they are and different levels of memory should have a different cost modifier depending on how fast or slow they are. A cache's associativity increases the design complecity and thus should also increase its cost.
 
 With our cost function, considering a 1GHz clock, our "optimum" architectures would cost:  
@@ -104,8 +105,7 @@ Cost(bzip) = 14852.51966
 Cost(mcf) = 17561.03931  
 Cost(sjeng) = 7571.129914  
 Cost(libm) = 6982.564957  
-
-
+  
 While the default architecture (found at the begining of this report) would cost:  
 Cost(default) = 6338.016239 
 
